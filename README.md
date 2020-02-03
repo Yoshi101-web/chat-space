@@ -15,11 +15,11 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
+|name|string|null: false, foreign_key: true|
 
 ### Association
 - has_many :groups_users
-- belongs_to :users, through: :groups_users
+- has_many :users, through: :groups_users
 
 
 ## groups_usersテーブル
