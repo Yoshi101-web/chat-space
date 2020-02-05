@@ -1,0 +1,25 @@
+.chat_main
+  .chat_main__header
+    .chat_main__header__left-box
+      %h2.chat_main__header__left-box__current-group Group
+      %ul.chat_main__header__left-box__member-list
+        Member :
+        %li.chat_main__header__left-box__member-list__member man
+    = link_to "#", class:"edit-btn" do
+      .chat_main__header__edit-btn Edit
+
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker Smith
+        %p.message__upper-info__date 2020/02/02わかりません
+      %p.message__text morning
+
+  .form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", value: "Send", class: "submit-btn"}
