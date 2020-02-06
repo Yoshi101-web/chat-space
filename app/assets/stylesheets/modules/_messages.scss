@@ -46,13 +46,18 @@
     }
   }
   &__groups{
-    height: calc(100vh-100px);
+    height: calc(100vh - 100px);
     width: 100%;
     color: white;
+    text-decoration: none;
+    overflow: scroll;
 
-    &__group{
+    .group{
       font-size: 15px;
       padding: 20px 20px 40px;
+      .single{
+        text-decoration: none;
+      }
 
         &__group-latest-message{
           font-size: 11px;
