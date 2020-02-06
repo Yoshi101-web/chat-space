@@ -13,8 +13,8 @@
   .side_bar__groups
     - current_user.groups.each do |group|
       .group
-        = link_to edit_group_path(group.id), class: "single" do
+        = link_to group_messages_path(group), class: "single" do
           .group__group-name
             = group.name
           .group__group-latest-message
-            メッセージはまだありません。
+            = group.show_last_message

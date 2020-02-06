@@ -142,44 +142,43 @@
     height: 90px;
     padding: 20px 40px;
     background-color: #d2d2d2;
-
-    form{
+    display: flex;
+    justify-content: center;
+    .new_message{
+      width: 100%;
       display: flex;
-
-      .input-box {
-        width: 100%;
-        display: flex;
-        position: relative;
-
-        &__text{
-          height: 50px;
-          width: 100%;
-          color: #434a54;
-          border-style: none;
-          padding: 0 0 0 10px;
-        }
-        &__image{
-          color: black;
-          position: absolute;
-          top: 13px;
-          right: 10px;
-          cursor: pointer;
-          font-size: 1.4rem;
-
-          &__file{
-            display: none;
-          }
-        }
-      }
-      .submit-btn{
-        height: 50px;
-        width: 100px;
-        padding:0 30px;
-        margin-left: 15px;
-        background-color: #38aef0;
-        color: white;
+      justify-content: space-between;
+      position: relative;
+    }
+    .form__message{
+      height: 50px;
+      width: 100%;
+      color: #434a54;
+      border-style: none;
+      padding: 0 0 0 10px;
+    }
+    .form__mask{
+      position: relative;
+      .form__mask__image{
+        color: black;
+        position: absolute;
+        top: 13px;
+        right: 10px;
         cursor: pointer;
+        font-size: 1.4rem;
       }
+    }
+    .hidden{
+      display: none;
+    }
+    &__submit{
+      height: 50px;
+      width: 100px;
+      padding:0 30px;
+      margin-left: 15px;
+      background-color: #38aef0;
+      color: white;
+      cursor: pointer;
     }
   }
 }
